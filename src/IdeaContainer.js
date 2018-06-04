@@ -6,7 +6,7 @@ import IdeaCard from './IdeaCard.js';
 export default function IdeaContainer(props) {
   return (
     <div>
-      <IdeaCard title='' body=''/>
+      <IdeaCard title={props.title} body={props.body}/>
     </div>
     )
 }

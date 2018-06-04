@@ -11,14 +11,15 @@ class App extends Component {
       this.state = {
         ideas: []
       }
+ 
   }
 
   render() {
     return (
       <div className="App">
         <h1>IDEABOX</h1>
-        <Input title='' body=''/>
-        <IdeaContainer />
+        <Input title={this.title} body={this.body} />
+        <IdeaContainer addCard={this.addCard} />
       </div>
     );
   }

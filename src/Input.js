@@ -9,6 +9,7 @@ export default class Input extends Component {
     }
     this.upDateTitle = this.upDateTitle.bind(this);
     this.upDateBody = this.upDateBody.bind(this);
+    this.addcard = this.addCard.bind(this)
   }
 
   upDateTitle(event) { 
@@ -23,9 +24,11 @@ export default class Input extends Component {
       )
   }
 
-  submit(event) {
+  addCard(event) {
     event.preventDefault();
     
+    console.log('hi')
+
   }
 
 
@@ -46,7 +49,7 @@ export default class Input extends Component {
             onChange={this.upDateBody}
             />
           <button
-          onClick={this.submit}>Add to list</button>
+          onClick={this.addCard}>Add to list</button>
         </form>
       </div>
       )
