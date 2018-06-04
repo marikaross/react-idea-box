@@ -1,6 +1,6 @@
 import React from 'react';
 
-const IdeaCard = props => {
+export default function IdeaCard(props) {
   return (
     <div>
       <article>
@@ -11,5 +11,3 @@ const IdeaCard = props => {
     </div>
     )
 }
-
-export default IdeaCard
