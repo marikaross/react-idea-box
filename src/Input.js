@@ -21,7 +21,11 @@ export default class Input extends Component {
     this.setState(
     {body: event.target.value}
       )
-    this.upDateTitle = this.upDateTitle.bind(this)
+  }
+
+  submit(event) {
+    event.preventDefault();
+    
   }
 
 
